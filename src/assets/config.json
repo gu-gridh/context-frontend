@@ -1,0 +1,9 @@
+{
+    "project": {
+        "name": "Context",
+        "urls": {
+            "baseURL": "https://diana.dh.gu.se/api/riksdagstryck"
+        },
+        "about": ""
+    }
+}
