@@ -249,14 +249,7 @@ button {
 
   .search-button {
     font-size: 35px;
-    color: white;
-    background-color: rgb(182, 82, 139);
-    border-color: none !important;
-    border-radius: 10px;
-    border: 0px solid transparent !important;
-    margin-bottom: 1.5rem;
-    position: absolute;
-    margin-left: -30px;
+  
   }
 }
 </style>
