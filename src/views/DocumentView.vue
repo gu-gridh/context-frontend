@@ -105,9 +105,9 @@
     font-family: "Cormorant Garamond", serif;
     letter-spacing: -3px;
     margin-top: 30px;
-    font-size: 30px;
-    line-height: 0.9;
-    color: rgb(182, 82, 139);
+    font-size: 45px;
+    line-height: 1.2;
+    color: green;
   }
   
   .author {
