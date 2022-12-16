@@ -5,7 +5,7 @@
     </Suspense>
     <div v-else>
       <div class="material-title">
-        <h1>Om materialet</h1>
+       Om materialet
       </div>
       <div class="material-content">
         Verktyget <i>Context</i> innehåller material från det svenska
@@ -62,10 +62,10 @@ const props = defineProps<{
   height: 100%;
 }
 .material-title {
-  font-family: "Cormorant Garamond", serif;
-  letter-spacing: -3px;
+font-family: "Barlow Condensed", sans-serif;
+  font-weight:100;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 80px;
   line-height: 0.9;
   text-align: center;
   color: rgb(64, 159, 105);

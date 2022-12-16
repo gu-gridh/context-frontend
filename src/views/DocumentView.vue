@@ -102,7 +102,8 @@
   }
   
   .title {
-    font-family: "Cormorant Garamond", serif;
+   font-family: "Barlow Condensed", sans-serif;
+   font-weight:200;
     letter-spacing: -3px;
     margin-top: 30px;
     font-size: 45px;

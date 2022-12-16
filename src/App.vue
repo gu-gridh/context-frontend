@@ -79,11 +79,12 @@ a:hover {
 }
 
 .ll-logo-container {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Barlow Condensed", sans-serif !important;
   letter-spacing: -6px;
   color: white;
   width: 100%;
-  font-size: 100px;
+  font-weight:100;
+  font-size: 130px;
   line-height: 0.75;
   margin-top: 80px;
   margin-bottom: 20px;

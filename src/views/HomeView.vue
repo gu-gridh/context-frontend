@@ -1,10 +1,10 @@
 <template>
     <div class="search-view-container">
       <div>
-        <div class="reuse-title">
-          <h1>Kontext</h1>
+        <div class="home-title">
+          Kontext
         </div>
-        <div class="reuse-content">
+        <div class="home-content">
           <i>Kontext</i> är ett verktyg och sökmotor för att utforska textmaterial vid Centrum för Digital Humaniora vid Göteborgs Universitet. Det huvudsakliga syftet är att det 
           skall utgöra enkelt verktyg med relativt kraftfulla sökförmågor. Det är avsikten att verktyget kontinuerligt skall utökas med fler textkorpora, men vid start finns endast tillgänglig 
           <i>Riksdagstrycket</i>, Sveriges tvåkammarriksdags dokumentsamling.
@@ -36,17 +36,17 @@
     padding-right: 3rem;
     padding-top: 3rem;
   }
-  .reuse-title {
-    font-family: "Cormorant Garamond", serif;
-    letter-spacing: -3px;
+  .home-title {
+     font-family: "Barlow Condensed", sans-serif;
+   font-weight:200;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 80px;
     line-height: 0.9;
     text-align: center;
     color: rgb(64, 159, 105);
   }
   
-  .reuse-content {
+  .home-content {
     color: black;
     font-size: 18px;
     padding: 30px;
@@ -54,7 +54,7 @@
     line-height: 1.3;
   }
   
-  .reuse-content ul {
+  .home-content ul {
     line-height: 1.8;
   }
   
