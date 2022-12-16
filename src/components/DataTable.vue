@@ -106,8 +106,10 @@ watch(page, async () => {
 
 .read-link {
   color: green;
-  line-height:1.0;
+  line-height:1.0 !important;
+  white-space:
 }
+
 
 .read-link:hover {
   color: rgb(26, 162, 114);
@@ -157,6 +159,7 @@ td {
   border-style: dotted;
   border-color: grey;
   border-width: 0 0 1px 0;
+  line-height:1.4;
 }
 
 td:first-child {
