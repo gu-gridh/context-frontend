@@ -4,7 +4,7 @@
       <div class="ll-logo-container">Kontext</div>
 
       <nav class="nav-links">
-        <router-link to="/" class="nav-link">Välkommen</router-link>
+       
         <!-- <router-link to="/about" class="nav-link">Om verktyget</router-link> -->
       </nav>
 
@@ -15,8 +15,9 @@
     <div class="right-column">
       <div class="right-view-container">
         <nav class="nav-links">
+           <router-link to="/" class="nav-link">Välkommen</router-link>
           <router-link to="/search/" class="nav-link"
-            >Sök i materialet</router-link
+            >Om materialet</router-link
           >
         </nav>
         <div class="right-view-container-content">
@@ -33,7 +34,7 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-// import Footer from "@/components/Footer.vue";
+import Footer from "@/components/Footer.vue";
 import SearchBox from "./components/SearchBox.vue";
 </script>
 
@@ -78,16 +79,17 @@ a:hover {
 }
 
 .ll-logo-container {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Barlow Condensed", sans-serif !important;
   letter-spacing: -6px;
   color: white;
   width: 100%;
-  font-size: 100px;
+  font-weight:100;
+  font-size: 130px;
   line-height: 0.75;
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 80px;
+  margin-bottom: 20px;
   margin-left: 0px;
-  height: 145px;
+  height: 100px;
   z-index: 1;
   transition: all 0.2s ease-in-out;
 }
@@ -104,6 +106,7 @@ a:hover {
   width: 100%;
   z-index: 1;
   margin-left: -5px;
+  min-height:35px;
 }
 
 .nav-link {
@@ -170,7 +173,8 @@ a:hover {
   background-color: white;
   border-radius: 10px;
   /* min-height: 400px; */
-  height: 800px;
+  height: auto;
+  min-height: 490px;
   max-height: 1000px;
 
   /* overflow: scroll; */
@@ -182,7 +186,7 @@ a:hover {
 .search-container {
   margin-left: 0px;
   width: 100%;
-  height: 400px;
+  height: 490px;
   background-color: rgb(255, 255, 255, 1);
   border-radius: 12px;
   display: flex;
@@ -201,29 +205,12 @@ a:hover {
   align-items: center;
 }
 
-.search-button {
-  font-family: "Barlow Condensed", sans-serif !important;
-  padding: 0.4rem 1rem 0.4rem 1rem;
-  font-size: 25px;
-  color: white;
-  background-color: rgb(182, 82, 139);
-  border-color: none !important;
-  border-radius: 10px;
-  border: 0px solid transparent !important;
-  margin-bottom: 1.5rem;
-  position: absolute;
-  margin-left: -30px;
-}
-
-button {
-  color: white;
-  overflow: hidden;
-}
 
 @media screen and (max-width: 950px) {
   .ll-logo-container {
+    margin-top:100px;
     font-size: 140px;
-    height: 240px;
+    height: 140px;
   }
 
   .nav-link {
@@ -231,6 +218,10 @@ button {
     padding: 0rem 0.5rem 0rem 0.5rem;
     margin-right: 0.25rem;
     border-radius: 10px;
+  }
+
+  .search-container {
+  min-height: 550px;
   }
 
   .select-label {
@@ -243,26 +234,13 @@ button {
     font-size: 25px !important;
   }
 
-  .search-container {
-    height: 480px;
-  }
 
   .multiselect {
     --ms-font-size: 2.2rem;
     --ms-option-font-size: 1.8rem;
   }
 
-  .search-button {
-    font-size: 35px;
-    color: white;
-    background-color: rgb(182, 82, 139);
-    border-color: none !important;
-    border-radius: 10px;
-    border: 0px solid transparent !important;
-    margin-bottom: 1.5rem;
-    position: absolute;
-    margin-left: -30px;
-  }
+
 
   .main-container {
     display: block;
