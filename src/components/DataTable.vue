@@ -15,7 +15,7 @@
         
         <tr class="row" v-for="document in documents" :key="document.id">
           <td>{{ document.year }}</td>
-          <td>{{ document.category }}</td>
+          <td>{{ categoryMap[document.category] }}</td>
           <td v-html="document.excerpts"></td>
 
           <td>
@@ -46,7 +46,7 @@
 <script setup lang="ts">
 import { ref, watch, computed } from "vue";
 import type { Document, Category } from "@/types/riksdagstryck";
-import { search } from "@/services/diana";
+import { search, list } from "@/services/diana";
 import { RouterLink, RouterView } from "vue-router";
 
 const props = defineProps<{
@@ -62,13 +62,31 @@ const page = ref<number>(1);
 const documentCount = ref<number>(0);
 const loading = ref<boolean>(true);
 const documents = ref<Array<Document>>();
+const categories = ref<Array<Category>>();
+const categoryMap = computed(() => {
+  return categories.value?.reduce((map: any, obj) => {
+    map[obj.id] = obj.name;
+    return map
+  }, {})
+})
 const pages = computed(() => {
   return Math.floor(documentCount.value / numberPerPage) + 1;
 });
 
 
 // Initialize
-fetchDocuments()
+await fetchDocuments()
+await fetchCategories()
+
+async function fetchCategories() {
+  const response = await list<Category>("documentcategory", {
+    limit: 100,
+  });
+
+
+  categories.value = response.results;
+
+}
 
 async function fetchDocuments() {
   loading.value = true;
@@ -81,7 +99,6 @@ async function fetchDocuments() {
 
   });
 
-  console.log(page)
 
   documents.value = response.results;
   documentCount.value = response.count;
