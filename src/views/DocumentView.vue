@@ -93,7 +93,7 @@
   .page-text {
     font-size: 20px;
     height: 100%;
-    max-height:790px;
+    max-height:750px;
     overflow-y: scroll;
   }
   
