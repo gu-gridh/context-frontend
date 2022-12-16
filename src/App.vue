@@ -92,17 +92,6 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.lb-logo-container {
-  margin-top: 50px;
-  margin-left: -10px;
-  width: 80px;
-  height: 80px;
-  background-image: url("@/assets/lblogo.png") !important;
-  background-size: 80px;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
-}
-
 .nav-links {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -235,13 +224,6 @@ button {
   .ll-logo-container {
     font-size: 140px;
     height: 240px;
-  }
-
-  .lb-logo-container {
-    width: 120px;
-    height: 120px;
-    background-image: url("@/assets/lblogo.png") !important;
-    background-size: 120px;
   }
 
   .nav-link {
