@@ -182,6 +182,7 @@ a:visited {
   border-color: grey;
   border-width: 1px 0 0 0;
   padding: 2rem 0 1rem 0;
+  line-height:1;
 }
 
 
@@ -249,14 +250,7 @@ button {
 
   .search-button {
     font-size: 35px;
-    color: white;
-    background-color: rgb(182, 82, 139);
-    border-color: none !important;
-    border-radius: 10px;
-    border: 0px solid transparent !important;
-    margin-bottom: 1.5rem;
-    position: absolute;
-    margin-left: -30px;
+  
   }
 }
 </style>
