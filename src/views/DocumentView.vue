@@ -79,7 +79,7 @@
     width: 80px;
     margin: 20px;
     margin-left: 3em;
-    background-color: rgb(182, 82, 139);
+    background-color: green;
   }
   
   .page-container {
@@ -93,6 +93,7 @@
   .page-text {
     font-size: 20px;
     height: 100%;
+    max-height:790px;
     overflow-y: scroll;
   }
   
@@ -101,12 +102,13 @@
   }
   
   .title {
-    font-family: "Cormorant Garamond", serif;
+   font-family: "Barlow Condensed", sans-serif;
+   font-weight:200;
     letter-spacing: -3px;
     margin-top: 30px;
-    font-size: 30px;
-    line-height: 0.9;
-    color: rgb(182, 82, 139);
+    font-size: 45px;
+    line-height: 1.2;
+    color: green;
   }
   
   .author {
@@ -114,8 +116,8 @@
   }
   
   .back-button:hover {
-    background-color: rgb(202, 102, 159);
-    color: black;
+    background-color: rgb(26, 162, 114);
+    color: white;
   }
   
   @media screen and (max-width: 950px) {

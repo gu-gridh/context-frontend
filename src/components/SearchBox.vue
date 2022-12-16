@@ -184,19 +184,6 @@ a:visited {
   padding: 2rem 0 1rem 0;
 }
 
-.search-container {
-  margin-left: 0px;
-  width: 100%;
-  height: 475px;
-  background-color: rgb(255, 255, 255, 1);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: space-between;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
-  z-index: 1;
-}
 
 .button-container {
   width: 100%;
@@ -213,13 +200,13 @@ a:visited {
   padding: 0.4rem 1rem 0.4rem 1rem;
   font-size: 25px;
   color: white;
-  background-color: rgb(182, 82, 139);
+  background-color: green;
   border-color: none !important;
   border-radius: 10px;
   border: 0px solid transparent !important;
-  /* margin-bottom: 3rem; */
+  margin-bottom: 3rem; 
   position: absolute;
-  /* margin-left: -30px; */
+  margin-left: -30px; 
 }
 
 button {
@@ -228,8 +215,8 @@ button {
 }
 
 .search-button:hover {
-  background-color: rgb(233, 102, 176) !important;
-  color: black !important;
+  background-color:rgb(26, 162, 114) !important;
+  color: white !important;
 }
 
 .range-slider-container {
