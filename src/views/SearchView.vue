@@ -4,10 +4,10 @@
       <data-table :q="q" :category="category" :min_year="min_year" :max_year="max_year"></data-table>
     </Suspense>
     <div v-else>
-      <div class="reuse-title">
+      <div class="material-title">
         <h1>Om materialet</h1>
       </div>
-      <div class="reuse-content">
+      <div class="material-content">
         Verktyget <i>Context</i> innehåller material från det svenska
         riksdagstrycket, alla parlamentariska dokument från tvåkammarriksdagen
         (1867-1970). Dokumenten är fördelade över 11 olika kategorier, från
@@ -20,7 +20,7 @@
         betyder att den letar exakta matchningar i texten. Det finns visst stöd
         för vildkortssökningar och reguljära uttryck, se nedan.
         <br />
-        <br />
+           <br />
         <ul>
           <li>
             Sök på förekomsten av alla ord i ett urval i ett dokument med hjälp av ampersand
@@ -61,7 +61,7 @@ const props = defineProps<{
 .search-view-container {
   height: 100%;
 }
-.reuse-title {
+.material-title {
   font-family: "Cormorant Garamond", serif;
   letter-spacing: -3px;
   margin-top: 30px;
@@ -71,16 +71,17 @@ const props = defineProps<{
   color: rgb(64, 159, 105);
 }
 
-.reuse-content {
+.material-content {
   color: black;
   font-size: 18px;
-  padding: 30px;
+  padding: 30px 50px 30px 30px;
   text-align: justify;
   line-height: 1.3;
 }
 
-.reuse-content ul {
+.material-content ul {
   line-height: 1.8;
+  text-align: left;
 }
 
 .search {

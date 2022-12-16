@@ -116,6 +116,7 @@ watch(page, async () => {
   height: 100%;
   display: flex;
   flex-direction: column;
+  max-height:950px;
 }
 .table-container {
   overflow: auto;
@@ -138,7 +139,7 @@ table {
 }
 
 th {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 th {

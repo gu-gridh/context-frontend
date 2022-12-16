@@ -12,7 +12,7 @@
           Använd sökgränssnittet i det vänstra fältet för att göra filtreringar utav materialet. Skriv in ett ord i sökrutan och tryck på "Sök" för att visa eventuella 
           resultat i samlingen. Konsultera <router-link to="search" class="text-link">instruktionerna</router-link> för mer avancerade sökstrategier.
 
-          Kontext har utvecklats vid Centrum för Digital Humaniora i huvudsak av Victor Wåhlstrand Skärström och Jonathan Westin.
+          Kontext har utvecklats vid Centrum för Digital Humaniora i huvudsak av Victor Wåhlstrand Skärström.
 
       </div>
       </div>
@@ -32,7 +32,7 @@
 
   .search-view-container {
     height: 100%;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-right: 3rem;
     padding-top: 3rem;
   }
@@ -51,20 +51,12 @@
     font-size: 18px;
     padding: 30px;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.3;
   }
   
   .reuse-content ul {
     line-height: 1.8;
   }
   
-  .search {
-    color: slategray;
-    background-color: lightgrey;
-    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
-    border-radius: 1rem;
-    /* overflow: hidden; */
-    white-space: nowrap;
-  }
   </style>
   
