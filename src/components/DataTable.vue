@@ -105,11 +105,12 @@ watch(page, async () => {
 <style scoped>
 
 .read-link {
-  color: black;
+  color: green;
+  line-height:1.0;
 }
 
 .read-link:hover {
-  color: green;
+  color: rgb(26, 162, 114);
 }
 
 .view-container {
